@@ -142,38 +142,38 @@ Not surprisiingly, tiny image features and nearest neighbor classifier has the w
 <tr>
 <td>Tiny Image ft. Nearest Neighbor</td>
 <td>0.20133333333333334</td>
-<td bgcolor=LightBlue><img src="result/tiny_image-nearest_neighbor.png" width=400 height=300></td>
+<td bgcolor=LightBlue><img src="results/tiny_image-nearest_neighbor.png" width=400 height=300></td>
 </tr>
 <tr>
 <td>Bag of SIFT ft. Nearest Neighbor</td>
 <td> 0.5173333333333333</td>
-<td bgcolor=LightBlue><img src="result/bag_of_sift-nearest_neighbor.png" width=400 height=300></td>
+<td bgcolor=LightBlue><img src="results/bag_of_sift-nearest_neighbor.png" width=400 height=300></td>
 </tr>
 <tr>
 <td>Bag of SIFT ft. Linear SVM</td>
 <td> 0.7286666666666667</td>
-<td bgcolor=LightBlue><img src="result/bag_of_sift-support_vector_machine.png" width=400 height=300></td>
+<td bgcolor=LightBlue><img src="results/bag_of_sift-support_vector_machine.png" width=400 height=300></td>
 </tr>
 </table>
 
 ## Visualization
 | Category name | Sample training images | Sample true positives | False positives with true label | False negatives with wrong predicted label |
 | :-----------: | :--------------------: | :-------------------: | :-----------------------------: | :----------------------------------------: |
-| Kitchen | ![](result/thumbnails/Kitchen_train_image_0001.jpg) | ![](result/thumbnails/Kitchen_TP_image_0192.jpg) | ![](result/thumbnails/Kitchen_FP_image_0285.jpg) | ![](result/thumbnails/Kitchen_FN_image_0182.jpg) |
-| Store | ![](result/thumbnails/Store_train_image_0001.jpg) | ![](result/thumbnails/Store_TP_image_0151.jpg) | ![](result/thumbnails/Store_FP_image_0026.jpg) | ![](result/thumbnails/Store_FN_image_0149.jpg) |
-| Bedroom | ![](result/thumbnails/Bedroom_train_image_0001.jpg) | ![](result/thumbnails/Bedroom_TP_image_0175.jpg) | ![](result/thumbnails/Bedroom_FP_image_0063.jpg) | ![](result/thumbnails/Bedroom_FN_image_0207.jpg) |
-| LivingRoom | ![](result/thumbnails/LivingRoom_train_image_0001.jpg) | ![](result/thumbnails/LivingRoom_TP_image_0146.jpg) | ![](result/thumbnails/LivingRoom_FP_image_0008.jpg) | ![](result/thumbnails/LivingRoom_FN_image_0147.jpg) |
-| Office | ![](result/thumbnails/Office_train_image_0002.jpg) | ![](result/thumbnails/Office_TP_image_0011.jpg) | ![](result/thumbnails/Office_FP_image_0005.jpg) | ![](result/thumbnails/Office_FN_image_0117.jpg) |
-| Industrial | ![](result/thumbnails/Industrial_train_image_0004.jpg) | ![](result/thumbnails/Industrial_TP_image_0152.jpg) | ![](result/thumbnails/Industrial_FP_image_0257.jpg) | ![](result/thumbnails/Industrial_FN_image_0148.jpg) |
-| Suburb | ![](result/thumbnails/Suburb_train_image_0002.jpg) | ![](result/thumbnails/Suburb_TP_image_0176.jpg) | ![](result/thumbnails/Suburb_FP_image_0076.jpg) | ![](result/thumbnails/Suburb_FN_image_0103.jpg) |
-| InsideCity | ![](result/thumbnails/InsideCity_train_image_0005.jpg) | ![](result/thumbnails/InsideCity_TP_image_0054.jpg) | ![](result/thumbnails/InsideCity_FP_image_0047.jpg) | ![](result/thumbnails/InsideCity_FN_image_0040.jpg) |
-| TallBuilding | ![](result/thumbnails/TallBuilding_train_image_0010.jpg) | ![](result/thumbnails/TallBuilding_TP_image_0106.jpg) | ![](result/thumbnails/TallBuilding_FP_image_0047.jpg) | ![](result/thumbnails/TallBuilding_FN_image_0107.jpg) |
-| Street | ![](result/thumbnails/Street_train_image_0001.jpg) | ![](result/thumbnails/Street_TP_image_0147.jpg) | ![](result/thumbnails/Street_FP_image_0036.jpg) | ![](result/thumbnails/Street_FN_image_0149.jpg) |
-| Highway | ![](result/thumbnails/Highway_train_image_0009.jpg) | ![](result/thumbnails/Highway_TP_image_0104.jpg) | ![](result/thumbnails/Highway_FP_image_0079.jpg) | ![](result/thumbnails/Highway_FN_image_0257.jpg) |
-| OpenCountry | ![](result/thumbnails/OpenCountry_train_image_0003.jpg) | ![](result/thumbnails/OpenCountry_TP_image_0122.jpg) | ![](result/thumbnails/OpenCountry_FP_image_0209.jpg) | ![](result/thumbnails/OpenCountry_FN_image_0125.jpg) |
-| Coast | ![](result/thumbnails/Coast_train_image_0010.jpg) | ![](result/thumbnails/Coast_TP_image_0084.jpg) | ![](result/thumbnails/Coast_FP_image_0030.jpg) | ![](result/thumbnails/Coast_FN_image_0047.jpg) |
-| Mountain | ![](result/thumbnails/Mountain_train_image_0002.jpg) | ![](result/thumbnails/Mountain_TP_image_0123.jpg) | ![](result/thumbnails/Mountain_FP_image_0124.jpg) | ![](result/thumbnails/Mountain_FN_image_0103.jpg) |
-| Forest | ![](result/thumbnails/Forest_train_image_0003.jpg) | ![](result/thumbnails/Forest_TP_image_0081.jpg) | ![](result/thumbnails/Forest_FP_image_0101.jpg) | ![](result/thumbnails/Forest_FN_image_0124.jpg) |
+| Kitchen | ![](results/thumbnails/Kitchen_train_image_0001.jpg) | ![](results/thumbnails/Kitchen_TP_image_0192.jpg) | ![](results/thumbnails/Kitchen_FP_image_0285.jpg) | ![](results/thumbnails/Kitchen_FN_image_0182.jpg) |
+| Store | ![](results/thumbnails/Store_train_image_0001.jpg) | ![](results/thumbnails/Store_TP_image_0151.jpg) | ![](results/thumbnails/Store_FP_image_0026.jpg) | ![](results/thumbnails/Store_FN_image_0149.jpg) |
+| Bedroom | ![](results/thumbnails/Bedroom_train_image_0001.jpg) | ![](results/thumbnails/Bedroom_TP_image_0175.jpg) | ![](results/thumbnails/Bedroom_FP_image_0063.jpg) | ![](results/thumbnails/Bedroom_FN_image_0207.jpg) |
+| LivingRoom | ![](results/thumbnails/LivingRoom_train_image_0001.jpg) | ![](results/thumbnails/LivingRoom_TP_image_0146.jpg) | ![](results/thumbnails/LivingRoom_FP_image_0008.jpg) | ![](results/thumbnails/LivingRoom_FN_image_0147.jpg) |
+| Office | ![](results/thumbnails/Office_train_image_0002.jpg) | ![](results/thumbnails/Office_TP_image_0011.jpg) | ![](results/thumbnails/Office_FP_image_0005.jpg) | ![](results/thumbnails/Office_FN_image_0117.jpg) |
+| Industrial | ![](results/thumbnails/Industrial_train_image_0004.jpg) | ![](results/thumbnails/Industrial_TP_image_0152.jpg) | ![](results/thumbnails/Industrial_FP_image_0257.jpg) | ![](results/thumbnails/Industrial_FN_image_0148.jpg) |
+| Suburb | ![](results/thumbnails/Suburb_train_image_0002.jpg) | ![](results/thumbnails/Suburb_TP_image_0176.jpg) | ![](results/thumbnails/Suburb_FP_image_0076.jpg) | ![](results/thumbnails/Suburb_FN_image_0103.jpg) |
+| InsideCity | ![](results/thumbnails/InsideCity_train_image_0005.jpg) | ![](results/thumbnails/InsideCity_TP_image_0054.jpg) | ![](results/thumbnails/InsideCity_FP_image_0047.jpg) | ![](results/thumbnails/InsideCity_FN_image_0040.jpg) |
+| TallBuilding | ![](results/thumbnails/TallBuilding_train_image_0010.jpg) | ![](results/thumbnails/TallBuilding_TP_image_0106.jpg) | ![](results/thumbnails/TallBuilding_FP_image_0047.jpg) | ![](results/thumbnails/TallBuilding_FN_image_0107.jpg) |
+| Street | ![](results/thumbnails/Street_train_image_0001.jpg) | ![](results/thumbnails/Street_TP_image_0147.jpg) | ![](results/thumbnails/Street_FP_image_0036.jpg) | ![](results/thumbnails/Street_FN_image_0149.jpg) |
+| Highway | ![](results/thumbnails/Highway_train_image_0009.jpg) | ![](results/thumbnails/Highway_TP_image_0104.jpg) | ![](results/thumbnails/Highway_FP_image_0079.jpg) | ![](results/thumbnails/Highway_FN_image_0257.jpg) |
+| OpenCountry | ![](results/thumbnails/OpenCountry_train_image_0003.jpg) | ![](results/thumbnails/OpenCountry_TP_image_0122.jpg) | ![](results/thumbnails/OpenCountry_FP_image_0209.jpg) | ![](results/thumbnails/OpenCountry_FN_image_0125.jpg) |
+| Coast | ![](results/thumbnails/Coast_train_image_0010.jpg) | ![](results/thumbnails/Coast_TP_image_0084.jpg) | ![](results/thumbnails/Coast_FP_image_0030.jpg) | ![](results/thumbnails/Coast_FN_image_0047.jpg) |
+| Mountain | ![](results/thumbnails/Mountain_train_image_0002.jpg) | ![](results/thumbnails/Mountain_TP_image_0123.jpg) | ![](results/thumbnails/Mountain_FP_image_0124.jpg) | ![](results/thumbnails/Mountain_FN_image_0103.jpg) |
+| Forest | ![](results/thumbnails/Forest_train_image_0003.jpg) | ![](results/thumbnails/Forest_TP_image_0081.jpg) | ![](results/thumbnails/Forest_FP_image_0101.jpg) | ![](results/thumbnails/Forest_FN_image_0124.jpg) |
 
 ## Credits
 This project is modified by Chia-Hung Yuan based on Min Sun, James Hays and Derek Hoiem's previous developed projects 
