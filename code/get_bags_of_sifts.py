@@ -6,8 +6,9 @@ import scipy.spatial.distance as distance
 from cyvlfeat.sift.dsift import dsift
 from time import time
 import pdb
+from skimage.color import rgb2gray
 
-def get_bags_of_sifts(image_paths):
+def get_bags_of_sifts(image_paths, vocab):
     ############################################################################
     # TODO:                                                                    #
     # This function assumes that 'vocab.pkl' exists and contains an N x 128    #
@@ -34,8 +35,8 @@ def get_bags_of_sifts(image_paths):
         image_feats : (N, d) feature, each row represent a feature of an image
     '''
     
-    with open('vocab.pkl', 'rb') as handle:
-        vocab = pickle.load(handle)
+    # with open('vocab.pkl', 'rb') as handle:
+    #     vocab = pickle.load(handle)
     
     image_feats = []
     
@@ -44,6 +45,8 @@ def get_bags_of_sifts(image_paths):
     
     for path in image_paths:
         img = np.asarray(Image.open(path),dtype='float32')
+        if img.ndim == 3:  # Check if the image has 3 dimensions (e.g., RGB)
+            img = rgb2gray(img)  # Convert to grayscale
         frames, descriptors = dsift(img, step=[1,1], fast=True)
         dist = distance.cdist(vocab, descriptors, metric='euclidean')
         idx = np.argmin(dist, axis=0)
