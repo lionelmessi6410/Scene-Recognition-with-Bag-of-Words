@@ -3,6 +3,7 @@ import numpy as np
 from cyvlfeat.sift.dsift import dsift
 from cyvlfeat.kmeans import kmeans
 from time import time
+from skimage.color import rgb2gray
 
 import pdb
 
@@ -84,6 +85,8 @@ def build_vocabulary(image_paths, vocab_size):
     
     for path in image_paths:
         img = np.asarray(Image.open(path),dtype='float32')
+        if img.ndim == 3:  # Check if the image has 3 dimensions (e.g., RGB)
+            img = rgb2gray(img)  # Convert to grayscale
         frames, descriptors = dsift(img, step=[5,5], fast=True)
         bag_of_features.append(descriptors)
     bag_of_features = np.concatenate(bag_of_features, axis=0).astype('float32')
