@@ -49,11 +49,11 @@ ABBR_CATEGORIES = ['Kit', 'Sto', 'Bed', 'Liv', 'Off', 'Ind', 'Sub',
                    'Cty', 'Bld', 'St', 'HW', 'OC', 'Cst', 'Mnt', 'For']
 
 
-FEATURE = args.feature
-# FEATUR  = 'bag of sift'
+#FEATURE = args.feature
+FEATURE  = 'bag_of_sift'
 
-CLASSIFIER = args.classifier
-# CLASSIFIER = 'support vector machine'
+#CLASSIFIER = args.classifier
+CLASSIFIER = 'nearest_neighbor'
 
 #number of training examples per category to use. Max is 100. For
 #simplicity, we assume this is the number of test cases per category, as
@@ -172,8 +172,8 @@ def build_confusion_mtx(test_labels_ids, predicted_categories, abbr_categories):
     #print(cm_normalized)
     plt.figure()
     plot_confusion_matrix(cm_normalized, abbr_categories, title='Normalized confusion matrix')
-
-    plt.show()
+    plt.savefig("plot.png", dpi=300, bbox_inches='tight')
+    #plt.show()
      
 def plot_confusion_matrix(cm, category, title='Confusion matrix', cmap=plt.cm.Blues):
     plt.imshow(cm, interpolation='nearest', cmap=cmap)

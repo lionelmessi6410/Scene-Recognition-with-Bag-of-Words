@@ -10,9 +10,12 @@ def get_image_paths(data_path, categories, num_train_per_cat):
     train_labels = []
     test_labels = []
 
-    for category in categories:
+    print("num_categories: ", num_categories)
+    print("num_train_per_cat:", num_train_per_cat)
 
+    for category in categories:
         image_paths = glob(os.path.join(data_path, 'train', category, '*.jpg'))
+        print(image_paths)
         for i in range(num_train_per_cat):
             train_image_paths.append(image_paths[i])
             train_labels.append(category)
